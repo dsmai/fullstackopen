@@ -1,12 +1,13 @@
 import React from "react";
 
 const Content = (props) => {
+  const {name, exercise} = props;
   return (
     <>
       {props.part_list.map((part, index) => {
         return (
           <p key={index}>
-            {part.part_name} {part.exercise}
+            {part.name} {part.exercise}
           </p>
         );
       })}
